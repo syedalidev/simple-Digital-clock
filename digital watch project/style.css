@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+     /* background-color: rgba(0, 238, 238, 0.862);  */
+     font-family: cursive;
+     background-color: black;
+}
+
+.clock{
+    height: 100%;
+    width: 100%;   
+    text-align: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.clock span{
+    font-size:  5rem;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+.clock span::after{
+    content: '';
+    font-size: 2rem;
+    bottom:  30%;
+    transform: translateX(-50%);
+}
+
+#hrs::after{
+    content: 'Hours';
+    color: aqua;
+}
+
+#min::after{
+    content: 'Min';
+    color: aqua;
+}
+
+#sec::after{
+    content: 'Sec';
+    color: aqua;
+}
